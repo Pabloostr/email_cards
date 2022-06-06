@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+        font-family: "Innerspace";
+        src:
+            local("Innerspace"),
+            url(.fonts/Innerspace/Innerspace-normal.ttf) format("truetype"),
+            url(.fonts/Innerspace/Innerspace-bold.ttf) format("truetype");
+        }
+        html, body {
+        height: 100%;
+        }
+        body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
+        background-color: #F8F8F8;
+        color: #333333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+        font-family: "Innerspace";
+        color: #000000;
+        margin: 0;
+        }
+        h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        }
+        h2 {
+        font-size: 1.5rem;
+        line-height: 1.6875rem;
+        }
+        h3 {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        }
+        h4 {
+        font-size: 1rem;
+        line-height: 1.125rem;
+        }
+        h5 {
+        font-size: 0.8125rem;
+        line-height: 0.9375rem;
+        }
+        h6 {
+        font-size: 0.6875rem;
+        line-height: 0.9375rem;
+        }
+
+        a {
+        text-decoration: none;
+        color: inherit;
+        }
+        .header__logo {
+            width: 100%;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .title {
+            margin-top: 36px;
+            font-family: 'Innerspace', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .text {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333333;
+        }
+        .btn {
+            width: 250px;
+            color:white;
+            background-color: #3849F9;
+            border: 1px solid #3849F9;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 10px 13px;
+            margin: 0 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Innerspace', sans-serif;
+            font-size: 13px;
+            line-height: 15px;  
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        .footer {
+            background-color: #EBEBEB;
+            padding: 16px 34px;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .min-logo {
+            height: 18px;
+            margin-right: 20px;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__logo" src="./img/Header.png" alt="header">
+        </header>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <h1 class="title">Вітаємо, ви успішно зареєструвалися.</h1>
+                    <p class="text">Ваш логін: Sofia_Dub <br>
+                        Щоб керувати своїм кабінетом, будь ласка, перейдіть за посиланням.</p>
+                    <button class="btn">перейти</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div  class="footer">
+                <div>
+                    <a target="_blank" rel="noreferrer" href="https://mon.gov.ua/">
+                    <img class="min-logo" src="./img/MES.png" alt="Ministry of Education and Science of Ukraine">
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://mkip.gov.ua/">
+                    <img class="min-logo" src="./img/MinCultInfoPolicy.png" alt="Ministry of Culture and Information Policy of Ukraine">
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://sport.gov.ua/">
+                     <img class="min-logo" src="./img/MinMolodSport.png" alt="Ministry of Youth and Sports of Ukraine">
+                    </a>
+                </div>
+                <div class="footer-block">    
+                    <a target="_blank" rel="noreferrer" href="https://www.softserveinc.com/uk-ua/">
+                    <img class="company-logo" src="./img/Vector.png" alt="SoftServe">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
